@@ -22,7 +22,24 @@ nav{
 /* Logo */
 .nav-logo{
     margin:auto;
-    padding: 1%;
+    padding: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 60px;
+
+    background-color: var(--color-gray);
+    color: var(--color-light-green);
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--color-black);
+    border-width: 2.5px;
+}
+
+.nav-logo:hover{
+    border-color: var(--color-light-green);
+    border-width: 4px;
 }
 
 /* menu links */
