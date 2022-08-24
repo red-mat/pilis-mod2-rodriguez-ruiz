@@ -1,3 +1,4 @@
 # Trabajo Grupal Modulo 2
 ## Autores
-Adriana Ruiz
+. Adriana Ruiz
+. Jesus Matias, Rodriguez
