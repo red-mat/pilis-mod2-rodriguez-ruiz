@@ -9,7 +9,8 @@
 }
 
 html{
-    font-family: 'Ubuntu Condensed', sans-serif;    
+    font-family: 'Ubuntu Condensed', sans-serif;
+    scroll-behavior: smooth;    
 }
 
 /* ********* HEADER ********** */
