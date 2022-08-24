@@ -29,15 +29,16 @@ nav{
     font-size: 60px;
 
     background-color: var(--color-gray);
-    color: var(--color-light-green);
+    color: var(--color-dark-green);
 
     border-radius: 50%;
     border-style: solid;
     border-color: var(--color-dark-green);
     border-width: 2.5px;
 }
-
 .nav-logo:hover{
+    color: var(--color-light-green);
+
     border-color: var(--color-light-green);
     border-width: 4px;
 }
