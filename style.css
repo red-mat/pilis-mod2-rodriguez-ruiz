@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
 :root{
     --color-black: #0D0A0B;
     --color-gray: #454955;
     --color-with: #FFFFFF;
     --color-light-green: #72B01D;
     --color-dark-green: #3F7D20;
+
+    font-family: 'Ubuntu Condensed', sans-serif;;
 }
 
 /* barra de navegacion */
