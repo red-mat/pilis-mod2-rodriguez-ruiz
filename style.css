@@ -7,7 +7,7 @@
     --color-light-green: #72B01D;
     --color-dark-green: #3F7D20;
 
-    font-family: 'Ubuntu Condensed', sans-serif;;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 /* ********* HEADER ********** */
@@ -33,7 +33,7 @@ nav{
 
     border-radius: 50%;
     border-style: solid;
-    border-color: var(--color-black);
+    border-color: var(--color-dark-green);
     border-width: 2.5px;
 }
 
@@ -48,7 +48,18 @@ nav{
     margin: auto;
     padding: 1%;
     overflow: hidden;
-    text-align: center;  
+    text-align: center;
+
+    background-color: var(--color-with);
+    
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-dark-green);
+}
+.nav-list:hover{
+    border-color: var(--color-light-green);
+    border-width: 4px;
 }
 
 .nav-buttons {
