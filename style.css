@@ -5,3 +5,11 @@
     --color-light-green: #72B01D;
     --color-dark-green: #3F7D20;
 }
+
+/* barra de navegacion */
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
