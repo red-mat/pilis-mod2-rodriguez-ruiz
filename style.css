@@ -10,10 +10,36 @@
     font-family: 'Ubuntu Condensed', sans-serif;;
 }
 
+/* ********* HEADER ********** */
 /* barra de navegacion */
 nav{
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo{
+    margin:auto;
+    padding: 1%;
+}
+
+/* menu links */
+.nav-list{
+    list-style: none;
+    margin: auto;
+    padding: 1%;
+    overflow: hidden;
+    text-align: center;  
+}
+
+.nav-buttons {
+    display: inline-block;
+    transition: 1s;
+}
+
+.nav-links{
+    padding: 20px;
+    margin:0%
 }
