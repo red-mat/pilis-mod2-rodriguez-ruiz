@@ -82,4 +82,5 @@ nav{
 .nav-links:hover{
     color: var(--color-light-green);
     text-decoration: underline;
+    font-weight: bold;
 }
