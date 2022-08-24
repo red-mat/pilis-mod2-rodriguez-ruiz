@@ -62,6 +62,7 @@ nav{
     border-width: 4px;
 }
 
+/* botones del nav-list */
 .nav-buttons {
     display: inline-block;
     transition: 1s;
@@ -69,5 +70,12 @@ nav{
 
 .nav-links{
     padding: 20px;
-    margin:0%
+    margin:0%;
+
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.nav-links:hover{
+    color: var(--color-light-green);
+    text-decoration: underline;
 }
