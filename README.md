@@ -1,7 +1,14 @@
 # Trabajo Grupal Modulo 2
 ## Autores
-Hola!! como estas
 - Adriana Ruiz
 - Jesus Matias, Rodriguez
+
 ## ACerca de
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Con la finalidad de mostrar lo aprendido en el modulo se desarrollara una pagina web con la modalidad del evento cultural **paseo de las flores**
+
+## herramientas de desarrollo
+- git/github: control de versiones
+- google drive: compartir recursos
+- draw.io: para maquetado
+- discord/wpp: medio de comunicacion y reunion
+- coolors.co: generador de paleta de colores
