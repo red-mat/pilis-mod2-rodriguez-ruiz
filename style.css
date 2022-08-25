@@ -307,9 +307,12 @@ h4 {
 
 h5 {
     padding-left: 10px;
+    color: white;
 }
 
 .box2 {
+    text-decoration: none;
+    
     display: flex;
     flex-direction: row;
     width: 50%;
