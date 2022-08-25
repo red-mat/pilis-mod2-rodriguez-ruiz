@@ -140,7 +140,8 @@ nav {
 .evento-presentacion{
     display: flex;
     justify-content: space-between;
-    padding: 15vh 10vh 5vh 10vh
+    margin: 5vw 10vh 5vw 10vh;
+    padding: 0;
 }
 
 /* parte informativa */
@@ -171,8 +172,8 @@ nav {
     justify-content: space-between;
 
     list-style: none;
-    padding: 10vh;
-    margin: 0;
+    padding: 0;
+    margin: 0 5vw 0 5vw;
 }
 .evento-img{
     height: 25vh;
@@ -312,7 +313,7 @@ h5 {
 
 .box2 {
     text-decoration: none;
-    
+
     display: flex;
     flex-direction: row;
     width: 50%;
