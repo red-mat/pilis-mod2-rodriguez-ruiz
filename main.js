@@ -11,7 +11,7 @@ if (!String.prototype.format) {
   
 
 const OPEN_WATHER_ICON="http://openweathermap.org/img/wn/{0}@2x.png";
-const OPEN_WATHER_API="https://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid={2}";
+const OPEN_WATHER_API="https://api.openweathermap.org/data/2.5/weather?appid={0}&lat={1}&lon={2}&units=metric";
 const OPEN_WATHER_KEY="55c6c3cfbfcdc79bde4a63cf2d5bdcbf";
 
 const EVENTO = {
