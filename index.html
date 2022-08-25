@@ -2,18 +2,70 @@
 <html lang="es-la">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Paseo de las Flores</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header></header>
+    <!-- menu cabecera -->
+    <header>
+        <nav>
+            <!-- logo y link home -->
+            <a class="nav-logo" href="#home">PF</a>
+
+            <!-- barra de enlaces -->
+            <ul class="nav-list">
+                <li class="nav-buttons"><a class="nav-links" href="#evento">Evento</a></li>
+                <li class="nav-buttons"><a class="nav-links" href="#nosotros">Nosotros</a></li>
+                <li class="nav-buttons"><a class="nav-links" href="#registro">Registrarme</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section id="home"></section>
-        <section id="evento"></section>
+        <!-- seccion home -->
+        <section id="home">
+            <h1 class="home-titulo">Paseo de las Flores</h1>
+            <h2 class="home-subtitulo">La Flor Mas Bella</h2>
+            <p class="home-lema">"Juntos potenciamos el comercio jujeño"</p>
+        </section>
+
+        <!-- seccion evento -->
+        <section id="evento">
+
+            <!-- video de presentacion -->
+            <div class="evento-video">
+                <iframe 
+                    width="560" height="315" src="https://www.youtube.com/embed/9rPncDT9lKQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+
+            <!-- informacion del evento -->
+            <div class="evento-presentacion">
+                <h1 class="evento-titulo">Evento</h1>
+                <p class="evento-parrafo">
+                    Esta será la décima edición, y será durante tres días, el <span>viernes 22, sábado23 y domingo 24 de agosto.</span>
+                    La muestra <span>se realizará de 8 a 21 horas</span> en el Paseo de las Plantas, y la
+                    entrada será libre y gratuita para todos los interesados en visitar la exposición.
+                </p>
+            </div>
+
+            <!-- imagenes del evento -->
+            <div class="evento-imagenes">
+                <img src="images/evento-img-1.png" alt="evento-img-1" class="evento-img" />
+                <img src="images/evento-img-2.png" alt="evento-img-2" class="evento-img" />
+                <img src="images/evento-img-3.png" alt="evento-img-3" class="evento-img" />
+            </div>
+        </section>
+   
+        <!-- seccion nosotros -->
         <section id="nosotros">
             <div class="container">
                 <div class="about-title">
@@ -35,6 +87,8 @@
                     </div>
                 </div>
         </section>
+        
+        <!-- seccion registro -->
         <section id="registro">
             <div class="contact-title">
                 <h2>Sumáte al evento para potenciar el comercio local.<br>
@@ -63,6 +117,7 @@
             </div>
         </section>
     </main>
+    
     <footer class="box">
         <div class="box1">
             <div>
