@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
-:root{
+:root {
     --color-black: #0D0A0B;
     --color-gray: #454955;
     --color-with: #FFFFFF;
@@ -8,19 +8,19 @@
     --color-dark-green: #3F7D20;
 }
 
-html{
+html {
     font-family: 'Ubuntu Condensed', sans-serif;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 /* ********* HEADER ********** */
 /* barra de navegacion */
-nav{
+nav {
     display: flex;
     position: fixed;
     width: 100%;
@@ -28,8 +28,8 @@ nav{
 }
 
 /* Logo */
-.nav-logo{
-    margin:auto;
+.nav-logo {
+    margin: auto;
     padding: 10px;
 
     text-decoration: none;
@@ -44,7 +44,8 @@ nav{
     border-color: var(--color-dark-green);
     border-width: 2.5px;
 }
-.nav-logo:hover{
+
+.nav-logo:hover {
     color: var(--color-light-green);
 
     border-color: var(--color-light-green);
@@ -52,7 +53,7 @@ nav{
 }
 
 /* menu links */
-.nav-list{
+.nav-list {
     list-style: none;
     margin: auto;
     padding: 1%;
@@ -60,13 +61,14 @@ nav{
     text-align: center;
 
     background-color: var(--color-with);
-    
+
     border-radius: 40px;
     border-style: solid;
     border-width: 2px;
     border-color: var(--color-dark-green);
 }
-.nav-list:hover{
+
+.nav-list:hover {
     border-color: var(--color-light-green);
     border-width: 4px;
 }
@@ -77,49 +79,53 @@ nav{
     transition: 1s;
 }
 
-.nav-links{
+.nav-links {
     padding: 20px;
-    margin:0%;
+    margin: 0%;
 
     text-decoration: none;
     color: var(--color-gray);
 }
-.nav-links:hover{
+
+.nav-links:hover {
     color: var(--color-light-green);
     text-decoration: underline;
     font-weight: bold;
 }
 
 /* ********** seccion Home ************* */
-#home{
+#home {
     background-image: url("./images/home-portada.jpg");
     background-size: cover;
-    
+
     display: flex;
     flex-direction: column;
-    
+
     height: 100vh;
     width: 100%;
 }
-.home-titulo{
+
+.home-titulo {
     text-align: center;
     font-size: 15vh;
 
     color: var(--color-light-green);
 }
 
-.home-subtitulo{
+.home-subtitulo {
     text-align: center;
     font-size: 10vh;
 
     color: var(--color-with);
 }
-.home-lema{
+
+.home-lema {
     text-align: center;
     font-size: 5vh;
 
     color: var(--color-with);
 }
+
 
 /* ************** seccion evento ******************* */
 #evento{
@@ -179,9 +185,19 @@ nav{
     border-width: 10px;
 }
 
+
+/* ********** Seccion Nosotros ************* */
+
+section {
+    padding-top: 80px;
+}
+
 .container {
     padding: 10px;
+    height: 100vh;
+    width: 100vw;
 }
+
 h2 {
     font-size: 42pt;
     font-weight: bold;
@@ -196,8 +212,7 @@ h3 {
 
 .about-title {
     float: center;
-    width: 100%;
-    padding-top: 50px;
+    width: 100%;   
     text-align: center;
 }
 
@@ -205,6 +220,7 @@ h3 {
     text-align: center;
 }
 
+/* ********** Seccion Registro ************* */
 .contact-title {
     float: left;
     width: 50%;
@@ -213,13 +229,9 @@ h3 {
 }
 
 .contact-form {
-
-    /*text-align: right;*/
     width: 40%;
-    /* padding: 20px; */
     display: inline-block;
     padding-left: 125px;
-
 }
 
 form .form-group {
@@ -232,7 +244,6 @@ form .form-control {
     width: 40%;
     padding: 0.375rem 0.7rem;
     font-size: 1rem;
-    /*text-align: right;*/
     line-height: 1.7;
     border: solid #72B01D
 }
@@ -260,50 +271,53 @@ form .form-control {
     border: 1px solid #72B01D;
     color: #72B01D;
 }
-/*Footer*/
+
+/* ********** Seccion Footer ************* */
 footer {
     background-color: #454955;
     color: #fff;
 }
- .box {  
-    width: 100%; 
-    display: flex; 
-    flex-direction: row;
- }
- h4 {
-    padding-left: 60px;
- }
- /* .box1 {
+
+.box {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
- } */
- .box1 {
+}
+
+h4 {
+    padding-left: 60px;
+}
+
+.box1 {
     width: 50%;
     padding-left: 60px;
- }
+}
+
 .box1_2 {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
+
 .box1_2 img {
     padding-left: 80px;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
+
 h5 {
     padding-left: 10px;
 }
+
 .box2 {
     display: flex;
     flex-direction: row;
     width: 50%;
     padding-left: 500px;
     padding-top: 30px;
- 
+
 }
+
 .box2 img {
     width: 40px;
     height: 40px;
