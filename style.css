@@ -131,6 +131,7 @@ nav {
 section {
     padding-top: 80px;
 }
+
 .container {
     padding: 10px;
     height: 100vh;
@@ -151,12 +152,18 @@ h3 {
 
 .about-title {
     float: center;
-    width: 100%;   
+    width: 100%;
     text-align: center;
 }
 
 .showcase-img {
     text-align: center;
+}
+
+.large {
+    padding-left: 250px;
+    width: 800px;
+    text-align: justify;
 }
 
 /* ********** Seccion Registro ************* */
