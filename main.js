@@ -44,7 +44,7 @@ const load_weather = (data) => {
 
     lugar.textContent = EVENTO.lugar.nombre;
     temperatura.textContent = data_temp;
-    icono.src = icon_url; 
+    icono.src = icon_url;
 };
 
 fetch(OPEN_WATHER_URL)
@@ -75,7 +75,11 @@ function onClick(event) {
                 'Gracias',
                 'success'
             );
+<<<<<<< HEAD
             cleanForm();            
+=======
+            cleanForm();
+>>>>>>> 4a402d813849197253a31fdff09deeb952dad2c5
         })
         .catch((err) => console.log(err));
 }
