@@ -280,16 +280,16 @@ form .form-control {
 }
 
 /* ********** Seccion Footer ************* */
-footer {
+.footer {
     background-color: #454955;
-    color: #fff;
-}
+    color: #fff;   
 
-.box {
-    width: 100%;
     display: flex;
     flex-direction: row;
+    
+    width: 100%;
 }
+
 
 h4 {
     padding-left: 60px;
