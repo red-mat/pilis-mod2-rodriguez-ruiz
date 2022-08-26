@@ -288,35 +288,46 @@ form .form-control {
     flex-direction: row;
     
     width: 100%;
+
 }
 
+/* weather widget */
+.weather-widget {
+    margin: 1vw;
+    padding: 0;
 
-h4 {
-    padding-left: 60px;
+    background-color: var(--color-with);
+    color: var(--color-gray);
+
+    border-style: solid;
+    border-color: var(--color-light-green);
+    border-width: 5px;
+    border-radius: 30px;
+}
+.weather-widget__text{
+    margin: 0;
+    padding: 0;
+}
+.weather-widget__text--header{
+    font-size: 20px;
 }
 
-.box1 {
-    width: 50%;
-    padding-left: 60px;
+.weather-widget__header{
+    margin: 5px;
+    padding: 0;
 }
-
-.box1_2 {
-    width: 100%;
+.weather-widget__body {
     display: flex;
-    flex-direction: row;
+
+    margin: 5px;
+    padding: 0;
+}
+.weather-widget__icon {
+   margin: 0;
+   padding: 0;
 }
 
-.box1_2 img {
-    padding-left: 80px;
-    width: 50px;
-    height: 50px;
-}
-
-h5 {
-    padding-left: 10px;
-    color: white;
-}
-
+/* whatsapp widget */
 .box2 {
     text-decoration: none;
 
@@ -332,6 +343,7 @@ h5 {
     width: 40px;
     height: 40px;
 }
+
 /* Alert */
 button.swal2-confirm.swal2-styled {
  background-color: #72B01D;
