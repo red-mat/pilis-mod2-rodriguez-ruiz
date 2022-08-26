@@ -7,7 +7,7 @@ if (!String.prototype.format) {
         return typeof args[number] != "undefined" ? args[number] : match;
       });
     };
-}
+};
   
 
 const OPEN_WATHER_ICON="http://openweathermap.org/img/wn/{0}@2x.png";
@@ -15,9 +15,38 @@ const OPEN_WATHER_API="https://api.openweathermap.org/data/2.5/weather?appid={0}
 const OPEN_WATHER_KEY="55c6c3cfbfcdc79bde4a63cf2d5bdcbf";
 
 const EVENTO = {
-    nombre:"feria de las plasntas",
+    nombre:"feria de las plantas",
     lugar: {
+        nombre:"ciudad cultural",
         latitud:-24.183346784048,
         longitud:-65.33130398918436
     }
 };
+
+const OPEN_WATHER_URL = OPEN_WATHER_API.format(
+    OPEN_WATHER_KEY,
+    EVENTO.lugar.latitud,
+    EVENTO.lugar.longitud
+);
+
+
+const load_weather = (data) => {
+    const data_temp = data.main.temp + "º";
+    const icon_url = OPEN_WATHER_ICON.format(data.weather[0].icon);    
+    
+    const id_lugar="clima-lugar";
+    const id_icono="clima-icono";
+    const id_temperatura="clima-temperatura";
+
+    const lugar = document.getElementById(id_lugar);
+    const icono = document.getElementById(id_icono);
+    const temperatura = document.getElementById(id_temperatura);
+
+    lugar.textContent = EVENTO.lugar.nombre;
+    temperatura.textContent = data_temp;
+    icono.src = icon_url; 
+};
+
+fetch(OPEN_WATHER_URL)
+    .then(response => response.json())
+    .then(data => load_weather(data));
