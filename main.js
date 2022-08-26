@@ -75,8 +75,7 @@ function onClick(event) {
                 'Gracias',
                 'success'
             );
-            cleanForm();
-            /* redirectUrl(); */
+            cleanForm();            
         })
         .catch((err) => console.log(err));
 }
@@ -88,3 +87,4 @@ function cleanForm() {
 
 let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);
+
