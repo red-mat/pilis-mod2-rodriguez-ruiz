@@ -279,58 +279,77 @@ form .form-control {
 }
 
 /* ********** Seccion Footer ************* */
-footer {
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2vh 5vw 2vh 5vw;
+
     background-color: #454955;
-    color: #fff;
+    color: #fff;   
 }
 
-.box {
-    width: 100%;
+/* weather widget */
+.weather-widget {
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--color-with);
+    color: var(--color-gray);
+
+    border-style: solid;
+    border-color: var(--color-light-green);
+    border-width: 5px;
+    border-radius: 30px;
+}
+.weather-widget__text{
+    margin: 0;
+    padding: 0;
+}
+.weather-widget__text--header{
+    font-size: 20px;
+}
+.weather-widget__header{
+    margin: 5px;
+    padding: 0;
+}
+.weather-widget__body {
     display: flex;
-    flex-direction: row;
+
+    margin: 5px;
+    padding: 0;
+}
+.weather-widget__icon {
+   margin: 0;
+   padding: 0;
 }
 
-h4 {
-    padding-left: 60px;
-}
-
-.box1 {
-    width: 50%;
-    padding-left: 60px;
-}
-
-.box1_2 {
-    width: 100%;
+/* whatsapp widget */
+.whatsapp-widget {
     display: flex;
-    flex-direction: row;
-}
 
-.box1_2 img {
-    padding-left: 80px;
-    width: 50px;
-    height: 50px;
-}
-
-h5 {
-    padding-left: 10px;
-    color: white;
-}
-
-.box2 {
-    text-decoration: none;
-
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    padding-left: 500px;
-    padding-top: 30px;
-
-}
-
-.box2 img {
-    width: 40px;
     height: 40px;
+
+    padding: 0;
+    margin: 0;
 }
+.whatsapp-widget__icon{
+    height: 100%;
+
+    margin: 5px;
+}
+.whatsapp-widget__number{
+    margin: auto;
+    padding: auto;
+
+    text-decoration: none;
+    font-size: 100%;
+    color: var(--color-with);
+
+    text-align: center;
+}
+
 /* Alert */
 button.swal2-confirm.swal2-styled {
  background-color: #72B01D;
