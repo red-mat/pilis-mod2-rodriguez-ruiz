@@ -1,25 +1,25 @@
 // add method format to string: https://sebhastian.com/javascript-format-string/
 if (!String.prototype.format) {
     String.prototype.format = function () {
-      let args = arguments;
+        let args = arguments;
 
-      return this.replace(/{(\d+)}/g, function (match, number) {
-        return typeof args[number] != "undefined" ? args[number] : match;
-      });
+        return this.replace(/{(\d+)}/g, function (match, number) {
+            return typeof args[number] != "undefined" ? args[number] : match;
+        });
     };
 };
-  
 
-const OPEN_WATHER_ICON="http://openweathermap.org/img/wn/{0}@2x.png";
-const OPEN_WATHER_API="https://api.openweathermap.org/data/2.5/weather?appid={0}&lat={1}&lon={2}&units=metric";
-const OPEN_WATHER_KEY="55c6c3cfbfcdc79bde4a63cf2d5bdcbf";
+
+const OPEN_WATHER_ICON = "http://openweathermap.org/img/wn/{0}@2x.png";
+const OPEN_WATHER_API = "https://api.openweathermap.org/data/2.5/weather?appid={0}&lat={1}&lon={2}&units=metric";
+const OPEN_WATHER_KEY = "55c6c3cfbfcdc79bde4a63cf2d5bdcbf";
 
 const EVENTO = {
-    nombre:"feria de las plantas",
+    nombre: "feria de las plantas",
     lugar: {
-        nombre:"ciudad cultural",
-        latitud:-24.183346784048,
-        longitud:-65.33130398918436
+        nombre: "ciudad cultural",
+        latitud: -24.183346784048,
+        longitud: -65.33130398918436
     }
 };
 
@@ -32,11 +32,11 @@ const OPEN_WATHER_URL = OPEN_WATHER_API.format(
 
 const load_weather = (data) => {
     const data_temp = data.main.temp + "º";
-    const icon_url = OPEN_WATHER_ICON.format(data.weather[0].icon);    
-    
-    const id_lugar="clima-lugar";
-    const id_icono="clima-icono";
-    const id_temperatura="clima-temperatura";
+    const icon_url = OPEN_WATHER_ICON.format(data.weather[0].icon);
+
+    const id_lugar = "clima-lugar";
+    const id_icono = "clima-icono";
+    const id_temperatura = "clima-temperatura";
 
     const lugar = document.getElementById(id_lugar);
     const icono = document.getElementById(id_icono);
@@ -75,11 +75,9 @@ function onClick(event) {
                 'Gracias',
                 'success'
             );
-<<<<<<< HEAD
-            cleanForm();            
-=======
+
             cleanForm();
->>>>>>> 4a402d813849197253a31fdff09deeb952dad2c5
+
         })
         .catch((err) => console.log(err));
 }
