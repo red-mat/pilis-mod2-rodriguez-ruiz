@@ -328,20 +328,29 @@ form .form-control {
 }
 
 /* whatsapp widget */
-.box2 {
-    text-decoration: none;
-
+.whatsapp-widget {
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    padding-left: 500px;
-    padding-top: 30px;
 
+    height: 40px;
+
+    padding: 0;
+    margin: 1vh;
 }
 
-.box2 img {
-    width: 40px;
-    height: 40px;
+.whatsapp-widget__icon{
+    height: 100%;
+
+    margin: 5px;
+}
+.whatsapp-widget__number{
+    margin: auto;
+    padding: auto;
+
+    text-decoration: none;
+    font-size: 100%;
+    color: var(--color-with);
+
+    text-align: center;
 }
 
 /* Alert */
