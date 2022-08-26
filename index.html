@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+
     <title>Paseo de las Flores</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Feria de las plantas</title>
+
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,7 +20,7 @@
     <header>
         <nav>
             <!-- logo y link home -->
-            <a class="nav-logo" href="#home">PF</a>
+            <a class="nav-logo" href="#home">FP</a>
 
             <!-- barra de enlaces -->
             <ul class="nav-list">
@@ -30,31 +34,34 @@
     <main>
         <!-- seccion home -->
         <section id="home">
-            <h1 class="home-titulo">Paseo de las Flores</h1>
+            <h1 class="home-titulo">Feria de las Plantas</h1>
             <h2 class="home-subtitulo">La Flor Mas Bella</h2>
             <p class="home-lema">"Juntos potenciamos el comercio jujeño"</p>
         </section>
 
         <!-- seccion evento -->
-        <section id="evento">
-
-            <!-- video de presentacion -->
-            <div class="evento-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9rPncDT9lKQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
-            <!-- informacion del evento -->
+        <section id="evento">           
+            <!-- presentacion del evento -->
             <div class="evento-presentacion">
-                <h1 class="evento-titulo">Evento</h1>
-                <p class="evento-parrafo">
-                    Esta será la décima edición, y será durante tres días, el <span>viernes 22, sábado23 y domingo 24 de
-                        agosto.</span>
-                    La muestra <span>se realizará de 8 a 21 horas</span> en el Paseo de las Plantas, y la
-                    entrada será libre y gratuita para todos los interesados en visitar la exposición.
-                </p>
+                <!-- video de presentacion -->
+                <div class="evento-video">
+                    <iframe 
+                        width="560" height="315" src="https://www.youtube.com/embed/9rPncDT9lKQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+
+                <!-- informacion del evento -->
+                <div class="evento-informativo">
+                    <h1 class="evento-titulo">Evento</h1>
+                    <p class="evento-parrafo">
+                        Esta será la décima edición, y será durante tres días, el <span>viernes 22, sábado23 y domingo 24 de agosto.</span>
+                        La muestra <span>se realizará de 8 a 21 horas</span> en <span>Ciudad Cultural</span>.<br>
+                        <span>Entrada libre y gratuita</span> para todos los interesados en visitar la exposición.
+                    </p>
+                </div>
             </div>
 
             <!-- imagenes del evento -->
@@ -126,11 +133,15 @@
                 <h5>25°C</h5>
             </div>
         </div>
-        <div class="box2">
+        <a class="box2" href="https://wa.me/07700900461" target="_blank" rel="noopener noreferrer">
             <img src="./images/whatsapp.png" alt="">
             <h5>3885234234</h5>
-        </div>
+        </a>
     </footer>
+
+
+
+
     <script src="main.js"></script>
 </body>
 

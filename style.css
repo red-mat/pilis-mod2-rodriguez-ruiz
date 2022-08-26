@@ -126,6 +126,67 @@ nav {
     color: var(--color-with);
 }
 
+
+/* ************** seccion evento ******************* */
+#evento{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;  
+}
+
+/* presentacion */
+.evento-presentacion{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw 10vh 5vw 10vh;
+    padding: 0;
+}
+
+/* parte informativa */
+.evento-informativo{
+    width: 50vw;
+    margin-left: 10vw;
+}
+.evento-titulo{
+    font-size: 100px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.evento-parrafo{
+    padding: 0;
+
+    font-size: 3vh;
+}
+
+.evento-parrafo span{
+    color: var(--color-dark-green);
+}
+
+/* imagenes */
+.list-images{
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    padding: 0;
+    margin: 0 5vw 0 5vw;
+}
+.evento-img{
+    height: 25vh;
+
+    object-fit: contain;
+
+    border-style: solid;
+    border-color: var(--color-light-green);
+    border-radius: 40px;
+    border-width: 10px;
+}
+
+
 /* ********** Seccion Nosotros ************* */
 
 section {
@@ -253,9 +314,12 @@ h4 {
 
 h5 {
     padding-left: 10px;
+    color: white;
 }
 
 .box2 {
+    text-decoration: none;
+
     display: flex;
     flex-direction: row;
     width: 50%;
