@@ -50,3 +50,41 @@ const load_weather = (data) => {
 fetch(OPEN_WATHER_URL)
     .then(response => response.json())
     .then(data => load_weather(data));
+
+function onClick(event) {
+    event.preventDefault();
+
+    const mensaje = {
+        name1: document.getElementById('name1').value,
+        headline: document.getElementById('headline').value,
+        cell: document.getElementById('cell').value
+    }
+    console.log(mensaje);
+
+
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: JSON.stringify(mensaje),
+        headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+            Swal.fire(
+                'Información enviada',
+                'Gracias',
+                'success'
+            );
+            cleanForm();
+            /* redirectUrl(); */
+        })
+        .catch((err) => console.log(err));
+}
+
+function cleanForm() {
+    let formulario = document.getElementById('formulario');
+    formulario.reset();
+}
+
+let boton = document.getElementById("enviar");
+boton.addEventListener("click", onClick);
