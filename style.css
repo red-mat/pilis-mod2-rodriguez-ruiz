@@ -22,9 +22,11 @@ body {
 /* barra de navegacion */
 nav {
     display: flex;
-    position: fixed;
-    width: 100%;
     justify-content: space-between;
+    position: fixed;
+    
+    width: 100vw;
+    margin: 2vh;
 }
 
 /* Logo */
