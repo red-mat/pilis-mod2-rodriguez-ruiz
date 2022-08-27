@@ -296,8 +296,7 @@ form .form-control {
     margin: 0;
 
     background-color: var(--color-with);
-    color: var(--color-gray);
-
+    
     border-style: solid;
     border-color: var(--color-light-green);
     border-width: 5px;
@@ -306,6 +305,8 @@ form .form-control {
 .weather-widget__text{
     margin: 0;
     padding: 0;
+    
+    color: var(--color-black);
 }
 .weather-widget__text--header{
     font-size: 20px;

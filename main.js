@@ -11,7 +11,7 @@ if (!String.prototype.format) {
 
 
 const OPEN_WATHER_ICON = "http://openweathermap.org/img/wn/{0}@2x.png";
-const OPEN_WATHER_API = "https://api.openweathermap.org/data/2.5/weather?appid={0}&lat={1}&lon={2}&units=metric";
+const OPEN_WATHER_API = "https://api.openweathermap.org/data/2.5/weather?appid={0}&lat={1}&lon={2}&units=metric&lang=es";
 const OPEN_WATHER_KEY = "55c6c3cfbfcdc79bde4a63cf2d5bdcbf";
 
 const EVENTO = {
@@ -30,21 +30,40 @@ const OPEN_WATHER_URL = OPEN_WATHER_API.format(
 );
 
 
-const load_weather = (data) => {
-    const data_temp = data.main.temp + "º";
-    const icon_url = OPEN_WATHER_ICON.format(data.weather[0].icon);
-
-    const id_lugar = "clima-lugar";
+const load_weather = (data) => { 
+    const id_lugar = "clima-cabecera";
     const id_icono = "clima-icono";
     const id_temperatura = "clima-temperatura";
-
-    const lugar = document.getElementById(id_lugar);
+    const id_maxima = "clima-maxima";
+    const id_minima = "clima-minima";
+    const id_viento = "clima-viento";
+    const id_humededad = "clima-humedad";
+    
+    const cabecera = document.getElementById(id_lugar);
     const icono = document.getElementById(id_icono);
     const temperatura = document.getElementById(id_temperatura);
+    const maxima = document.getElementById(id_maxima);
+    const minima = document.getElementById(id_minima);
+    const viento = document.getElementById(id_viento);
+    const humedad = document.getElementById(id_humededad);
+    
+    const url_icono = OPEN_WATHER_ICON.format(data.weather[0].icon);
+    const text_cabecera = EVENTO.lugar.nombre + ": " + data.weather[0].description;
+    const text_temp = "temperatura: " + data.main.temp + "º";
+    const text_max = "maxima: " + data.main.temp_max + "º";
+    const text_min = "minima: " + data.main.temp_min + "º";
+    const text_viento = "viento: " + data.wind.speed + "m/s";
+    const text_humedad = "humedad: " + data.main.humidity + "%";
 
-    lugar.textContent = EVENTO.lugar.nombre;
-    temperatura.textContent = data_temp;
-    icono.src = icon_url;
+
+    cabecera.textContent = text_cabecera;
+    icono.src = url_icono;
+    temperatura.textContent = text_temp;
+    maxima.textContent = text_max;
+    minima.textContent = text_min;
+    viento.textContent = text_viento;
+    humedad.textContent = text_humedad;
+
 };
 
 fetch(OPEN_WATHER_URL)
